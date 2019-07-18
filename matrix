@@ -1,0 +1,23 @@
+#Your code below
+a,b=map(int, input().split(" "))
+c=[]
+c1=[]
+for i in range(a):
+    x=input().split(" ")
+    x=list(x)
+    c.append(x)
+for i in range(a):
+    for j in range(b):
+        t=c[i][j][::-1]
+        c[i][j]=int(t)
+for i in range(b):
+    for j in range(a):
+        c1.append(c[j][i])
+    c1.sort()
+    for j in range(a):
+        c[j][i]=c1[j]
+    c1.clear()
+for i in range(a):
+    for j in range(b):
+        print(c[i][j],end=" ")
+    print("")
