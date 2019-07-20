@@ -1,0 +1,14 @@
+#Your code below
+a=input().strip()
+b=input().strip()
+c=list(a)
+d=list(b)
+for i in range(len(c)):
+    if (i+1)%2!=0:
+        print(c[i],end="")
+    else:
+        for j in range(i,len(d)):
+            if (j+1)%2==0:
+                print(d[i],end="")
+            else:
+                break
