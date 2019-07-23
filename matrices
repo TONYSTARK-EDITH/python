@@ -1,0 +1,18 @@
+#Your code below
+a,b=map(int, input().strip().split(" "))
+c=[]
+d=[]
+for i in range(a):
+    x=input().strip().split(" ")
+    x=list(x)
+    c.append(x)
+for j in range(a):
+    y=input().strip().split(" ")
+    y=list(y)
+    d.append(y)
+for i in range(a):
+    for j in range(b):
+        if int(c[i][j])!=int(d[i][j]):
+            c[i][j]='*'
+        print(c[i][j],end=" ")
+    print("")
