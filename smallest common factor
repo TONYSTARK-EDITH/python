@@ -1,0 +1,10 @@
+#Your code below
+a,b=map(int, input().split())
+t=0
+for i in range(2,a):
+    if a%i==0 and b%i==0:
+        print(i)
+        break
+else:
+    print("-1")
+    
