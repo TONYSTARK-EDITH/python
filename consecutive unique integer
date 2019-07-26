@@ -1,0 +1,18 @@
+a,b=map(int, input().split())
+c1=[]
+l=0
+c=input().split()
+c=list(c)
+for i in range(len(c)):
+    if (i+b)<=len(c):
+        for j in range(i,i+b):
+            c1.append(str(c[j]))
+        t=len(c1)
+        print(c1)
+        c1=list(set(c1))
+        print(c1)
+        g=len(c1)
+        if t==g:
+            l=l+1
+    c1.clear()
+print(l)
