@@ -1,0 +1,11 @@
+a,b=map(int, input().split())
+s=0
+for i in range(a,b+1):
+    t=i**3
+    s1=str(i)
+    c=len(s1)
+    if i==t%(10**c):
+        s=1
+        print(i,end=" ")
+if s==0:
+    print("-1")
