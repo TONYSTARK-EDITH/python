@@ -1,0 +1,19 @@
+#Your code below
+a,b,c=map(int,input().split(":"))
+d,e,f=map(int,input().split(":"))
+x,y=60,60
+i,j,k=a,b,c
+t=(d*3600+e*60+f)-(a*3600+b*60+c)
+print(t)
+for m in range(t+1):
+    if i==24:
+        i=1
+    if k==60:
+        k=00
+        j+=1
+    if j==60:
+        j=00
+        i+=1    
+    print("{0:02d}"":""{1:02d}"":""{2:02d}".format(i,j,k))
+    k+=1
+
