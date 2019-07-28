@@ -1,0 +1,22 @@
+#Your code below
+a=int(input())
+o=0
+z=0
+c1=[]
+for i in range(a):
+    o,z=0,0
+    x=input().strip()
+    c=list(x)
+    for i in c:
+        if i=='1':
+            o=o+1
+        if i=='0':
+            z=z+1
+    c1.append(o)
+    c1.append(z)
+for i in range(len(c1)):
+    if i+1 == len(c1)-1:
+        print(c1[i],c[i+1])
+        break
+    else:
+        print(c1[i],c[i+1])
