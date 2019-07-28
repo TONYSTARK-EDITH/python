@@ -1,0 +1,16 @@
+#Your code below
+a=int(input())
+b=[]
+for i in range(2,a**2):
+    t=i
+    c=0
+    v=0
+    for k in range(2,t):
+        if t%k==0:
+            c=1
+            break
+    if c==0 and len(b)<a:
+        b.append(t)
+        for j in b:
+            v=v+j
+        print(v,end=" ")
