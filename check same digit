@@ -1,0 +1,11 @@
+a,b=map(int,input().split())
+t=b//10
+g=b%10
+h=a//10
+y=a%10
+if t==h or t==y :
+    print("Valid")
+elif g==h or g==y:
+    print("Valid")
+else:
+    print("Invalid")
