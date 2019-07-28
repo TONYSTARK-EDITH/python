@@ -1,0 +1,11 @@
+#Your code below
+a=int(input())
+b=[]
+for i in range(1,a+1):
+    b.append(i)
+for i in range(len(b)):
+    if (i+1)%2!=0 and i+1<len(b):
+        b[i+1]=b[i]*b[i+1]
+    elif i+1<len(b):
+        b[i+1]=b[i]+b[i+1]
+print(b[len(b)-1])
