@@ -1,0 +1,17 @@
+#Your code below
+a=int(input())
+b=[]
+for i in range(a):
+    rev=0
+    x=int(input())
+    t=x
+    while t>0:
+        c=t%10
+        rev=rev*10+c
+        t=t//10
+    if rev==x:
+        b.append(x)
+for i in b:
+    print(i)
+if len(b)==0:
+    print("-1")
