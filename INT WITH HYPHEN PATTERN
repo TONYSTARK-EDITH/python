@@ -1,0 +1,16 @@
+#Your code below
+a=int(input())
+b=a
+c=[]
+for i in range(1,a+1):
+    t='-'*(b-1)
+    for k in range(1,i+1):
+        c.append(str(k)
+    print(c)
+    x="".join(c)
+    c.reverse()
+    y="".join(c)
+    print(x,t,y,sep="")
+    print("")
+    c.clear()
+    b=b-1
