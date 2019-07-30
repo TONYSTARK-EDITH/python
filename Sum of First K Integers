@@ -1,0 +1,10 @@
+#Your code below
+a,b=map(int,input().split())
+c=input().split()
+c=list(c)
+s=0
+for i in range(b):
+    s=s+int(c[i])
+d=a-b
+for i in range(d,a):
+    print(s-int(c[i]),end=" ")
