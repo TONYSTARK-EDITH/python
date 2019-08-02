@@ -1,0 +1,30 @@
+#Your code below
+a=int(input())
+c=a
+j=0
+b=[]
+for i in range(1,a+2):
+    t='-'*j
+    for k in range(1,2*a+1-j):
+        b.append(str(c))
+        if k!=2*a-j:
+            b.append("*")
+    if j==2*a:
+        b.append("*")
+    print(t,("".join(b)))
+    b.clear()
+    j=j+2
+    c=c-1
+c=1
+j=j-4
+for i in range(a):
+    t='-'*j
+    for k in range(2*a-j,0,-1):
+        b.append(str(c))
+        if k!=1:
+            b.append("*")
+    print(t,"".join(b))
+    b.clear()
+    j=j-2
+    c=c+1
+    
