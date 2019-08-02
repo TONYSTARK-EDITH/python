@@ -1,0 +1,18 @@
+a,b=map(int,input().split())
+c=[]
+d=[]
+for i in range(a):
+    x=input().strip().split()
+    x=list(x)
+    c.append(x)
+for i in range(b):
+    g=0
+    for j in range(a):
+        t=int(c[j][i])
+        if t<0:
+            g=g+1
+    d.append(g)
+if max(d)>0:
+    print(d.index(max(d))+1)
+else:
+    print("-1")
