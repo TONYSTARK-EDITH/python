@@ -1,0 +1,13 @@
+#Your code below
+a=int(input())
+b=input().split()
+b=list(b)
+d=[]
+for i in b:
+    if i.isupper():
+        d.append(ord(i)-64)
+    else:
+        d.append(ord(i)-96)
+d.reverse()
+for i in d:
+    print(i,end=" ")
