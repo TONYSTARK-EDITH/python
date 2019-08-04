@@ -1,0 +1,23 @@
+#Your code below
+a=input().strip()
+b=int(input())
+a=list(a)
+c=a[0:b]
+d=a[len(a)-b:len(a)]
+t=0
+e=[]
+for i in range(1,len(a)//b+1):
+    if i%2!=0:
+        print("".join(c),end="")
+        t=t+b
+    else:
+        print("".join(d),end="")
+        t=t+b
+    if i==len(a)//b and t!=len(a):
+        if (i+1 )% 2!=0:
+            for j in range((len(a)-t)):
+                print(c[j],end="")
+        else:
+            for j in range((len(a)-t)):
+                print(d[j],end="")
+                
