@@ -1,0 +1,17 @@
+#Your code below
+a,b=map(int,input().split())
+c=input().split()
+c=list(c)
+h=0
+for i in range(len(c)):
+    t=int(c[i])
+    if t%b==0:
+        h=1
+        d=c[i]
+        print(d,end=" ")
+        continue
+    if h==1 and t%b!=0:
+        c[i]=d
+    else:
+        h=0
+    print(c[i],end=" ")
