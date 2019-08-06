@@ -1,0 +1,17 @@
+#Your code below
+a,b=map(int,input().split())
+b1=input().split()
+b1=list(b)
+s=0
+for i in range(a):
+    t=int(b1[i])
+    if i+1 < a  and t==b and int(b[i+1])!=b:
+        b1[i+1]='0'
+        continue
+    elif t==b and i==a-1:
+        continue
+    elif t==b and int(b1[i+1])==b:
+        continue
+    else:
+        s=s+t
+print(s)
