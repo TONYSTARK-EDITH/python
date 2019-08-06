@@ -1,0 +1,11 @@
+#Your code below
+a=int(input())
+b=input().split()
+b=list(b)
+for i in b:
+    t=int(i)
+    g=t%10
+    if g!=0:
+        print("{0:.2f}".format(t/g),end=" ")
+    else:
+        print("{0:.2f}".format(t),end=" ")
