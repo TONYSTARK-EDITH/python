@@ -1,0 +1,12 @@
+#Your code below
+a=input().strip()
+a=list(a)
+t,j=0,1
+b=[]
+for i in range(len(a)):
+    t=t+j
+    b.append(t)
+    j=j+1
+for i in b:
+    if i<=len(a):
+        print(a[i-1],end="")
