@@ -1,0 +1,24 @@
+#Your code below
+a=int(input())
+b=input().split()
+b=list(b)
+h=0
+j,t=0,1
+for i in range(a-1):
+    s,s1=0,0
+    for i1 in range(0,t):
+        m=int(b[i1])
+        s=s+m
+    for j in range(t,a):
+        l=int(b[j])
+        print(l)
+        s1=s1+l
+    print(s,s1)
+    if s==s1:
+        h=1
+        break
+    t=t+1
+if h==1:
+    print("YES")
+else:
+    print("NO")
