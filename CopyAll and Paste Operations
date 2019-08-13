@@ -1,0 +1,5 @@
+a,b=map(str,input().split())
+t=len(b)
+for i in range(int(a)):
+    t=t*2
+print(t)
