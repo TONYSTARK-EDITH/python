@@ -1,0 +1,18 @@
+#Your code below
+a=int(input())
+b=[]
+i=1
+for j in range(1,2*a):
+    if j%2!=0:
+        b.append(str(i))
+        i=i+1
+    else:
+        b.append('*')
+print("".join(b))
+for i in range(a-1):
+    for j in range(len(b)-1,-1,-1):
+        if b[j].isdigit():
+            b.remove(b[j])
+            b.insert(0,'*')
+            break
+    print("".join(b))
