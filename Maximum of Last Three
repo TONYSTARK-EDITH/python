@@ -1,0 +1,14 @@
+#Your code below
+a=int(input())
+t=a%10
+g=(a//10)%10
+h=(a//100)%10
+if t>g:
+    if t>h:
+        print(t)
+    else:
+        print(h)
+elif g>h:
+    print(g)
+else:
+    print(h)
