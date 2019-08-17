@@ -1,0 +1,7 @@
+a,b=map(int,input().split())
+for i in range(a,b+1):
+    t=i%10
+    g=(i//10)%10
+    print(t,g)
+    if(t+g)%2==0:
+        print(i,end=" ")
