@@ -1,0 +1,25 @@
+a=list(input())
+b=[]
+for i in range(len(a)):
+    if i==0 or i==len(a)-1:
+        b.append(a[i])
+    else:
+        t=' '*1
+        b.append(t)
+for i in range(len(a)):
+    if i==len(a)//2:
+        for j in range(len(b)):
+            if j==len(a)-i-1:
+                b[j]=a[j]
+            else:
+                b[j]=' '
+        print("".join(b))
+    else:
+        for j in range(len(b)):
+            if j==len(a)-i-1 or j==i:
+                b[j]=a[j]
+            else:
+                b[j]=' '
+        print("".join(b))
+    
+        
