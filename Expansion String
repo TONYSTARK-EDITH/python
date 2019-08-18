@@ -1,0 +1,6 @@
+a=input()
+b=list(a)
+c=list(a)
+for i in range(len(b)):
+    print("".join(c),end="")
+    c.pop(0)
