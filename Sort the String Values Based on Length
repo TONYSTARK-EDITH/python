@@ -1,0 +1,16 @@
+#Your code below
+a=int(input())
+b=[]
+b1=[]
+for i in range(a):
+    x=input()
+    b1.append(x)
+    b.append(len(x))
+b.sort()
+for i in range(len(b)):
+    t=b[i]
+    for i in range(len(b)):
+        g=len(b1[i])
+        if t==g:
+            print(b1[i])
+            break
