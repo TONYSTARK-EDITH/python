@@ -1,0 +1,7 @@
+#Your code below
+a=int(input())
+b=input().split()
+b=list(b)
+for i in b:
+    i=list(i)
+    print(min(i))
