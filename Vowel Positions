@@ -1,0 +1,12 @@
+#Your code below
+a=input().strip()
+b=['a','e','i','o','u','A','E','I','O','U']
+a=list(a)
+t=0
+for i in range(len(a)):
+    if a[i] in b:
+        print(i+1,end=" ")
+    else:
+        t=t+1
+if t==len(a):
+    print("-1")
