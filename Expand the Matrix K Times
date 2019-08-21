@@ -1,0 +1,15 @@
+#Your code below
+a,b,c=map(int,input().split())
+b=[]
+for i in range(a):
+    x=input().split()
+    x=list(x)
+    b.append(x)
+for i in b:
+    i=list(i)
+    for k in range(c):
+        for j in i:
+            for k in range(c):
+                print(j,end=" ")
+        print()
+        
