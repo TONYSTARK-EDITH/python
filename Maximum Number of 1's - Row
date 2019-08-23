@@ -1,0 +1,16 @@
+#Your code below
+a=int(input())
+m=0
+h=0
+d=[]
+for i in range(a):
+    t=0
+    g=i
+    x=list(input().split())
+    for i1 in x:
+        if int(i1)==1:
+            t+=1
+    if h < t :
+        h=t
+        m=g
+
