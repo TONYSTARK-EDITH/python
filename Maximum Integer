@@ -1,0 +1,16 @@
+a,b=map(int,input().split())
+c=list(map(int,input().split(" ")))
+t=max(c)
+h=0
+for i in c:
+    if i!=t:
+        if (i*b) <= t:
+            h=0
+        else:
+            h=1
+            break
+if h!=1:
+    print(t)
+else:
+    print(-1)
+    
