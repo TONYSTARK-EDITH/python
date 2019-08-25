@@ -1,0 +1,14 @@
+#Your code below
+a=input().strip()
+a=list(a)
+for i in range(len(a)):
+    if (i+1)%2==0 and t!=1:
+        print("*",end="")
+    else:
+        print(a[i],end="")
+print()
+for i in range(len(a)):
+    if (i+1)%2==0:
+        print(a[i],end="")
+    else:
+        print("*",end="")
