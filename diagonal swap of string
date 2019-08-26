@@ -1,0 +1,24 @@
+#Your code below
+a=list(input().strip())
+b=list(input().strip())
+c=list(a)
+j=0
+k=1
+for i in range(len(a)):
+    if (i+1)%2==0 and j<len(b):
+        a[i]=b[j]
+        j=j+2
+    elif k<len(b):
+        a[i]=b[k]
+        k=k+2
+print("".join(a))
+j=0
+k=1
+for i in range(len(b)):
+    if (i+1)%2==0 and j<len(a):
+        b[i]=c[j]
+        j=j+2
+    elif k<len(a):
+        b[i]=c[k]
+        k=k+2
+print("".join(b))
