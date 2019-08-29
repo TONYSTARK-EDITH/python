@@ -1,0 +1,16 @@
+#Your code below
+a=int(input())
+b=list(input().split())
+t=0
+g=0
+for i in b:
+    if int(i)%2==0:
+        t=t+1
+    else:
+        g=g+1
+if t>g:
+    print("even")
+elif t==g:
+    print("-1")
+else:
+    print("odd")
