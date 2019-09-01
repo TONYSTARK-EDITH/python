@@ -1,0 +1,21 @@
+#Your code below
+a=list(input())
+b=list(input())
+d=[]
+e=[]
+e1=[]
+d1=[]
+c="aeiouAEIOU"
+for i in range(len(a)):
+    if a[i] in c:
+        d.append(a[i])
+        e.append(i)
+for i in range(len(b)):
+    if b[i] in c:
+        d1.append(b[i])
+        e1.append(i)
+for i in range(len(e)):
+    a[e[i]]=d1[i]
+    b[e1[i]]=d[i]
+print("".join(a))
+print("".join(b))
