@@ -1,0 +1,19 @@
+#Your code below
+a,b=map(int,input().split())
+c=[]
+for i in range(a):
+    x=list(map(int,input().split()))
+    c.append(x)
+m,n,n1=0,0,0
+for i in range(b):
+    if n!=b//2:
+        print(c[m][n],end=" ")
+        m=m+1
+        n=n+1
+        n1=n
+    else:
+        print(c[m][n1],end=" ")
+        m=m-1
+        n1=n1+1
+    
+        
