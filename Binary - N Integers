@@ -1,0 +1,11 @@
+#Your code below
+a=int(input())
+b=list(map(int,input().split()))
+s=0
+for i in b:
+    a=int("{0:b}".format(i))
+    t=(a//10)%10
+    print(a,t)
+    s=s*10+t
+s=str(s)
+print(int(s,2))    
