@@ -1,0 +1,6 @@
+#Your code below
+a,b=map(int,input().split())
+s=int("{0:b}".format(a))
+t=10**b
+s=str(s%t)
+print(int(s,2))
