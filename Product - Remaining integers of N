@@ -1,0 +1,11 @@
+#Your code below
+a=int(input())
+b=list(map(int,input().split()))
+for i in range(a):
+    s=1
+    for j in range(a):
+        if j==i:
+            continue
+        else:
+            s=s*b[j]
+    print(s,end=" ")
