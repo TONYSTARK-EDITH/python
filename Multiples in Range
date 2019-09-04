@@ -1,0 +1,23 @@
+#Your code below
+a,b=map(int,input().split())
+c,d,e=map(int,input().split())
+i=1
+d1=[]
+while True:
+    t=0
+    if (c*i<=b and c*i>=a):
+        d1.append(c*i)
+        t=1
+    if (d*i>=a and d*i<=b):
+        d1.append(d*i)
+        t=1
+    if e*i<=b and e*i>=a:
+        d1.append(e*i)
+        t=1
+    if t==0:
+        break
+    i=i+1
+d1=list(set(d1))
+d1.sort()
+for i in d1:
+    print(i,end=" ")
