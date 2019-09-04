@@ -1,0 +1,6 @@
+#Your code below
+a=int(input())
+b=list(str(a))
+t=(a//10)%10
+for i in b:
+    print(i*t,end="")
