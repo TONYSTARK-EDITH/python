@@ -1,0 +1,12 @@
+#Your code below
+a,b=map(str,input().split())
+c="aeiou"
+a=ord(a)
+b=ord(b)
+if a<b:
+    t=1
+else:
+    t=-1
+for i in range(a,b+t,t):
+    if chr(i) not in c:
+        print(chr(i),end=" ")
