@@ -1,0 +1,14 @@
+#Your code below
+a=int(input())
+b=list(input().split(" "))
+c=[]
+d=[]
+print(b)
+for i in b:
+    c.append(len(i))
+    d.append(len(i))
+c.sort()
+if c==d:
+    print("yes")
+else:
+    print("no")
