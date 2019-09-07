@@ -1,0 +1,16 @@
+#Your code below
+a=int(input())
+b=list(map(int,input().split()))
+c,d=map(int,input().split())
+for i in b:
+    if i%c==0:
+        x=b.index(i)
+        break
+m=b[::-1]
+for i in m:
+    if i%d==0:
+        y=m.index(i)
+        break
+b[x],b[len(b)-y-1]=b[len(b)-y-1],b[x]
+for i in b:
+    print(i,end=" ")
