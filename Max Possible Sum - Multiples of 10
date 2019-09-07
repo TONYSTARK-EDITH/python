@@ -1,0 +1,15 @@
+#Your code below
+a=int(input())
+b=list(map(int,input().split()))
+t=sum(b)
+h=0
+c=[]
+for i in b:
+    if (t-i)%10==0:
+        h=1
+        c.append(i)
+        break
+if h==0:
+    print("-1")
+else:
+    print(min(c))
