@@ -1,0 +1,17 @@
+#Your code below
+a=list(input().strip())
+b=list(input().strip())
+c=int(input())
+m=list(a)
+for i in range(c):
+    t=a[0]
+    a.pop(0)
+    a.insert(len(a),t)
+    print(a)
+    g=m[len(a)-1]
+    m.pop(len(a)-1)
+    m.insert(0,g)
+if "".join(a)=="".join(b) or "".join(m)=="".join(b):
+    print("YES")
+else:
+    print("NO")
