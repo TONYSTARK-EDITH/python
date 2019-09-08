@@ -1,0 +1,8 @@
+#Your code below
+a=list(input().strip())
+b1=list(a)
+b="aeiouAEIOU"
+for i in range(len(a)):
+    if i+1 < len(a):
+        if a[i] not in b and a[i+1] in b:
+            print(a[i],a[i+1],sep="",end=" ")
