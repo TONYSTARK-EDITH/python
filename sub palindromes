@@ -1,0 +1,19 @@
+def palindrome(a):
+    if len(a)>2:
+        b=a[::-1]
+        t="".join(a)
+        g="".join(b)
+        if t==g:
+            return 1
+        else:
+            return 0
+    else:
+        return 0
+a=list(input().strip())
+s=0
+for i in range(len(a)):
+    for j in range(i,len(a)+1):
+        m=palindrome(a[i:j])
+        if m==True:
+            s=s+1
+print(s)
