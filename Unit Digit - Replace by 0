@@ -1,0 +1,8 @@
+#Your code below
+a=int(input())
+t=a%10
+a=list(str(a))
+for i in range(len(a)):
+    if int(a[i])==t:
+        a[i]='0'
+print(int("".join(a)))
