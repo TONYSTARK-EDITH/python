@@ -1,0 +1,11 @@
+#Your code below
+a,b=map(int,input().split())
+a=list(str(a))
+b=list(str(b))
+j=-1
+s=0
+for i in range(len(a)):
+    t=int(a[i])*int(b[j])
+    s=s+t
+    j=j-1
+print(s)
