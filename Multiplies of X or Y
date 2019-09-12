@@ -1,0 +1,8 @@
+#Your code below
+a,b=map(int,input().split())
+if a>b:
+    t=a
+else:
+    t=b
+for i in range(1,11):
+    print(t*i,end=" ")
