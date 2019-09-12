@@ -1,0 +1,10 @@
+#Your code below
+a=list(map(int,input().split()))
+b=int(input())
+t=a.index(b)
+s,g=0,0
+for i in range(t):
+    s=s+a[i]
+for i in range(t+1,len(a)):
+    g=g+a[i]
+print(s if s<g else g)
