@@ -1,0 +1,6 @@
+#Your code below
+b=int(input())
+a=list(map(int,input().split())
+for i in range(len(a)):
+    if i+1 < len(a):
+        print((a[i]%10)*10+(a[i+1]//10)%10,end=" ")        
