@@ -1,0 +1,13 @@
+#Your code below
+a=int(input())
+if a%2==0:
+    t=a//2
+else:
+    t=a//2 + 1
+h=1
+for i in range(t):
+   print(str(h)*h,str(a)*a,sep="",end="")
+   h=h+1
+   a=a-1
+   if i!=t-1:
+       print()
