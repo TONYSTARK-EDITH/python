@@ -1,0 +1,25 @@
+#Your code below
+b,v,c=map(int,input().split())
+d,e=map(int,input().split())
+if d>e:
+    rupees=v*d
+    rembun=b-v*2
+    if rembun >= c*2:
+        rupees=rupees+c*e
+    else:
+        c=rembun//2
+        rupees=rupees+c*e
+    print(rupees)
+else:
+    if c*2<=b:
+        rupees = c*e
+        rembun=b-c*2
+        if rembun>=v*2:
+            rupees=rupees+v*d
+        else:
+            v=rembun//2
+            rupees=rupees+v*d
+    else:
+        c=b//2
+        rupees=c*e
+    print(rupees)
