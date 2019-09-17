@@ -1,0 +1,20 @@
+#Your code below
+a=list(input().strip())
+t=int(a[0])
+for i in a:
+    if t < int(i):
+        t=int(i)
+for i in range(t):
+    if i==0:
+        print('1'*len(a))
+    else:
+        for i in range(len(a)):
+            m=int(a[i])
+            if m>1:
+                print('1',end="")
+            else:
+                print('0',end="")
+            a.pop(i)
+            a.insert(i,m-1)
+        print()
+    
