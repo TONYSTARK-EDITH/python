@@ -1,0 +1,8 @@
+#Your code below
+a=list(input().strip())
+for i in range(len(a)):
+    if a[i]=='a':
+        a[i]='1'
+    else:
+        a[i]='0'
+print(int("".join(a),2))
