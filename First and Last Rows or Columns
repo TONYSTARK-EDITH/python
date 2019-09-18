@@ -1,0 +1,18 @@
+#Your code below
+a=int(input())
+b=[]
+for i in range(a):
+    x=list(map(int,input().split()))
+    b.append(x)
+if a%2!=0:
+    for i in b[0]:
+        print(i,end=" ")
+    print()
+    for i in b[a-1]:
+        print(i,end=" ")
+else:
+    for i in range(a):
+        print(b[i][0],end=" ")
+    print()
+    for i  in range(a):
+        print(b[i][a-1],end=" ")
