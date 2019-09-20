@@ -1,0 +1,10 @@
+#Your code below
+a=input()
+a=ord(a.upper())
+print(a,ord('A'))
+j=1
+for i in range(ord('A'),a+1):
+    for k in range(j):
+        print(chr(i),end=" ")
+    print()
+    j=j+1
