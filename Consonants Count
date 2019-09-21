@@ -1,0 +1,16 @@
+#Your code below
+a=int(input())
+b="aeiouAEIOU"
+m,n=[],[]
+for i in range(a):
+    s=0
+    x=input()
+    x=list(x)
+    for j in x:
+        if j not in b:
+            s+=1
+    m.append(x)
+    n.append(s)
+t=max(n)
+print(n)
+print(m[n.index(t)])
