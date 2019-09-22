@@ -1,0 +1,9 @@
+#Your code below
+a=list(input().strip())
+b="AEIOUaeiou"
+for i in range(len(a)):
+    if a[i] in b:
+        a[i]='*'
+    elif a[i].isdigit():
+        a[i]='*'
+print("".join(a))
