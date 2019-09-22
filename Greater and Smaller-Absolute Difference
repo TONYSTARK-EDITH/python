@@ -1,0 +1,11 @@
+#Your code below
+a=int(input())
+s,t,b=0,0,[]
+b=list(map(int,input().split()))
+c=int(input())
+for i in b:
+    if i<=c:
+        s+=1
+    else:
+        t+=1
+print(abs(s-t))
