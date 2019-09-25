@@ -1,0 +1,18 @@
+#Your code below
+a=list(input())
+o,n,e,z,r=0,0,0,0,0
+for i in a:
+    if i=='n':
+        n+=1
+    elif i=='z':
+        z+=1
+    elif i=='o':
+        o+=1
+    elif i=='r':
+        r+=1
+    elif i=='e':
+        e+=1
+if z==r and e==n+z and o==n+z:
+    print("one"*n,"zero"*z,sep="")
+else:
+    print("-1")
