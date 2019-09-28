@@ -1,0 +1,12 @@
+#Your code below
+a=list(input())
+if a[0]=='-':
+    t=int(a[1])
+    h=len(a)-1
+else:
+    t=int(a[0])
+    h=len(a)
+if t%2==0:
+    print('*'*h)
+else:
+    print("".join(a))
