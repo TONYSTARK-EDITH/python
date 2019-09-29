@@ -1,0 +1,14 @@
+#Your code below
+a=list(input().strip())
+b='*'*len(a)
+c=list(b)
+t=len(a)//2
+h=len(a)//2
+print(c)
+for i in range(len(a)):
+   c.insert(len(a),a[h]) 
+   h+=1
+   if h>=len(a):
+      h=0
+   c.pop(0)
+   print("".join(c))
