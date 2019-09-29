@@ -1,0 +1,11 @@
+#Your code below
+a=list(input())
+b="aeiouAEIOU"
+for i in range(len(a)):
+    if a[i] in b:
+        for j in range(i+1,len(a)):
+            if a[j] not in b:
+                a[j] = a[j].lower() if a[j].isupper() else a[j].upper()
+                break
+            print(j)
+print("".join(a))
