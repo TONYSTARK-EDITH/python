@@ -1,0 +1,7 @@
+#Your code below
+a=list(input().strip())
+b=int(input())
+for i in range(b):
+    a.insert(len(a),a[0])
+    a.pop(0)
+print("".join(a))
