@@ -1,0 +1,7 @@
+#Your code below
+def rad(a,b,c,d):
+    return (abs(a-c)**2 + abs(b-d)**2)**0.5
+a,b=map(int,input().split())
+c,d=map(int,input().split())
+r=rad(a,b,c,d)
+print("%.2f" % ((22/7)*r**2))
