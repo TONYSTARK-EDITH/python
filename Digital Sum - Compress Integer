@@ -1,0 +1,24 @@
+#Your code below
+def re(x):
+    for i in range(len(x)):
+        if i+1 < len(x):
+            t=int(x[i])
+            g=int(x[i+1])
+            if t+g>9:
+                x=list(str(t+g))
+                re(x)
+            else:
+                return t+g
+m=[]
+a=list(input())
+for i in range(len(a)):
+    if i+1 <len(a):
+        t=int(a[i])
+        g=int(a[i+1])
+        if t+g > 9:
+            x=list(str(t+g))
+            h=re(x)
+            m.append(str(h))
+        else:
+            m.append(str(t+g))
+print(int("".join(m)))
