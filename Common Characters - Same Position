@@ -1,0 +1,23 @@
+#Your code below
+a=int(input())
+b=[]
+for i in range(a):
+    x=list(input())
+    b.append(x)
+h=0
+i=b[0]
+for j in range(len(i)):
+    h=0
+    t=i[j]
+    for k in range(1,a):
+        m=b[k]
+        if t==m[j]:
+            h=1
+        else:
+            h=0
+            break
+    if h==1:
+        print(t,end="")
+    else:
+        h=0
+        continue
