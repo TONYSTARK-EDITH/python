@@ -1,0 +1,21 @@
+#Your code below
+a=list(map(int,input().strip().split()))
+for i in range(4):
+    t=a[i]
+    t1=a[i]
+    s,g,h,g1=0,0,0,0
+    for j in range(4):
+        if i!=j and s!=2:
+            t+=a[j]
+            s=2
+        elif i!=j:
+            g+=a[j]
+    for j in range(4):
+        if i!=j:
+            g1+=a[j]
+    if t1==g1 or t==g:
+        print("YES")
+        h=1
+        break
+if h==0:
+    print("NO")
