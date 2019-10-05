@@ -1,0 +1,9 @@
+a=input("Enter the txt file name:")
+a+=".txt"
+b=open(a,"r")
+for each in b:
+    t=each.split(" ")
+    for i in t:
+        if i=="must":
+            i="will"
+        print(i,end=" ")
