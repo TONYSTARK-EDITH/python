@@ -1,0 +1,16 @@
+#Your code below
+a=list(input())
+b=int(input())
+m= 1 if len(a)>1 else 0
+for i in range(b):
+    for j in range(m,len(a)):
+        t=int(a[j])
+        if int(a[0])!=1:
+            a[0]='1'
+            break
+        elif t!=0:
+            a[j]='0'
+            break
+        else:
+            continue
+print("".join(a))
