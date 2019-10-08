@@ -1,0 +1,10 @@
+#Your code below
+a=list(input())
+for i in range(len(a)):
+    t=int("".join(a))
+    print(t)
+    if (t//10)%10 %2!=0:
+        print(t)
+        break
+    else :
+        a.pop()
