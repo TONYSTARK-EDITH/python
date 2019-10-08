@@ -1,0 +1,16 @@
+#Your code below
+def length(a,b,c,d):
+    t=(a-c)**2 + (b-d)**2
+    t=t**(1/2)
+    return t
+a,b=map(int,input().split())
+c,d=map(int,input().split())
+e,f=map(int,input().split())
+m1=length(a,b,c,d)
+m2=length(c,d,e,f)
+m3=length(a,b,e,f)
+
+if m1==m2 or m1==m3 or m2==m3:
+    print("SQUARE")
+else:
+    print("RECTANGLE")
