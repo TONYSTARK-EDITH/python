@@ -1,0 +1,15 @@
+#Your code below
+a=int(input())
+b=list(map(int,input().split()))
+c=[['-' for i in range(a)] for i in range(max(b))]
+k=0
+for i in range(a):
+    t=b[i]
+    for j in range(max(b)-1,max(b)-t-1,-1):
+        c[j][k]='#'
+    k=k+1
+for i in range(len(c)):
+    for j in range(a):
+        print(c[i][j],end=" ")
+    print()
+        
