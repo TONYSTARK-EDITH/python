@@ -1,0 +1,24 @@
+#Your code below
+a=int(input())
+t,g,h=0,0,0
+date,mon,year,m,n,o=[],[],[],[],[],[]
+for i in range(a):
+    x,y,z=map(int,input().split("/"))
+    date.append(x)
+    mon.append(y)
+    year.append(z)
+t1=min(year)
+for i in range(a):
+    if year[i]==t1:
+        m.append(date[i])
+        n.append(mon[i])
+        o.append(year[i])
+if min(m)<10:
+    t='0'+str(min(m))
+else:
+    t=min(m)
+if min(n)<10:
+    g='0'+str(min(n))
+else:
+    g=min(n)
+print(t,g,min(o),sep="/")
