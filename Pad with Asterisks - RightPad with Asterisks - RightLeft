@@ -1,0 +1,10 @@
+#Your code below
+a=list(input().strip())
+b=list(input().strip())
+t=abs(len(a)-len(b))
+if len(a)<len(b):
+    print("".join(a)+'*'*t)
+    print("".join(b))
+else:
+    print("".join(a))
+    print('*'*t+"".join(b))
