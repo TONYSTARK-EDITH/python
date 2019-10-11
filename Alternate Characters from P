@@ -1,0 +1,5 @@
+#Your code below
+a=list(input().strip())
+b=int(input())
+for i in range(b-1,len(a),2):
+    print(a[i],end="")
