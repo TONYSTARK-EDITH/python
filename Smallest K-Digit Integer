@@ -1,0 +1,9 @@
+#Your code below
+a,b=map(int,input().split())
+b1=list(input().strip().split(" "))
+c=[]
+for i in b1:
+    i=list(i)
+    if len(i)==b:
+        c.append(int(i))
+print(min(c) if len(c)>0 else -1)
