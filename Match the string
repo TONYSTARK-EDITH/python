@@ -1,0 +1,14 @@
+#Your code below
+a=int(input())
+b,c=[],[]
+for i in range(a):
+    x,y=map(str,input().split())
+    b.append(int(x))
+    c.append(y)
+for i in range(a):
+    print(b[i],end=" ")
+    for j in range(len(c)):
+        if len(c[j])==b[i]:
+            print(c[j],end=" ")
+            break
+    print()
