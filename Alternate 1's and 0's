@@ -1,0 +1,13 @@
+#Your code below
+a=int(input())
+t=("{0:b}".format(a))
+t=list(str(t))
+h=0
+for i in range(0,len(t),2):
+    if i+1 < len(t):
+        if t[i]=='1' and t[i+1]=='0':
+            h=h+1
+        else:
+            h=0
+            break
+print("YES" if h==len(t)//2 else "NO")
