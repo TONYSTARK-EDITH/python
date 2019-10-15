@@ -1,0 +1,25 @@
+#Your code below
+a=int(input())
+b,c=[],[]
+for i in range(a):
+    s,t=0,0
+    x=list(input().strip())
+    for j in x:
+        if j.isalpha():
+            s+=1
+        else:
+            t+=1
+    x1=x.copy()
+    if s>=t:
+        for j in range(len(x)):
+            if x[j].isalpha():
+                continue
+            else:
+                x1.remove(x[j])
+    else:
+        for j in range(len(x)):
+            if x[j].isalpha():
+                x1.remove(x[j])
+    b.append(x1)
+    c.append(len(x1))
+print("".join(b[c.index(max(c))]))
