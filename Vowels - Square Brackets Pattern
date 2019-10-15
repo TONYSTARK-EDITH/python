@@ -1,0 +1,7 @@
+#Your code below
+a=list(input().strip())
+c="aeiouAEIOU"
+for i in range(len(a)):
+    if a[i] in c:
+        a[i]='['+a[i]+']'
+        print("".join(a))
