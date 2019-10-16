@@ -1,0 +1,19 @@
+#Your code below
+def iss(n):
+    t=0
+    h=1
+    while n!=1:
+        if n%2!=0:
+            h=0
+            break
+        n=n//2
+        t+=1
+    if h==1:
+        return t
+    else:
+        return 0
+a=int(input())
+h=iss(a-1)
+g=iss(a+1)
+print(h,g)
+print(h if h>0 else g if g>0 else "no")
