@@ -1,0 +1,19 @@
+#Your code below
+def m(a):
+    c=0
+    n=a[0]
+    for i in a:
+        c1=a.count(i)
+        if c1 > c:
+            c=c1
+            n=i
+    return n
+a=int(input())
+b=[]
+for i in range(a):
+    x=input().strip()
+    b.append(x)
+c=list(map(int,input().split()))
+c.sort()
+t=m(c)
+print(b[t],t)
