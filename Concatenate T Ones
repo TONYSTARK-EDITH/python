@@ -1,0 +1,9 @@
+a=int(input())
+b="{0:b}".format(a)
+b=list(str(b))
+t=0
+for i in b:
+  if i=='1':
+    t+=1
+c='1'*t
+print(int(c,2))
