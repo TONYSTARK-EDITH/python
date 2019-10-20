@@ -1,0 +1,14 @@
+#Your code below
+a,b=map(int,input().split())
+c=list(map(int,input().split()))
+d=list(map(int,input().split()))
+j=b-1
+for i in range(a-1,-1,-1):
+    if j >=0:
+        print(c[i] if c[i]>d[j] else d[j], end=" ")
+    elif i>=0:
+        print(c[i],end=" ")
+    j-=1
+if j > 0:
+    while j>=0:
+        print(d[j],end=" ")
