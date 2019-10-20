@@ -1,0 +1,13 @@
+a=list(input().strip())
+for i in a:
+  if i=='(':
+    t=a.index(i)
+  elif i==')':
+    g=a.index(i)
+g1=a[t+1:g]
+g1=g1[::-1]
+for i in range(0,t):
+  print(a[i],end="")
+print("".join(g1),end="")
+for i in range(g+1,len(a)):
+  print(a[i],end="")
