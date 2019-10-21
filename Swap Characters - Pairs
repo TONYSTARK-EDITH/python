@@ -1,0 +1,7 @@
+#Your code below
+a=list(input().strip())
+b=int(input())
+for i in range(b):
+    x,y=map(int,input().split())
+    a[x-1],a[y-1]=a[y-1],a[x-1]
+print("".join(a))
