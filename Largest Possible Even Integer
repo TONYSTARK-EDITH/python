@@ -1,0 +1,11 @@
+#Your code below
+a=list(input().strip())
+b=[]
+for i in range(len(a)):
+    a[i]=int(a[i])
+a.sort()
+for i in a:
+    if i%2==0:
+        b.append(str(i))
+b.reverse()
+print(int("".join(b)) if len(b)>0 else -1)
