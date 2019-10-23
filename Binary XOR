@@ -1,0 +1,5 @@
+a=list(input().strip())
+b=list(input().strip())
+for i in range(len(a)):
+  print(0 if int(a[i])+int(b[i])==2 else int(a[i])+int(b[i]),end="")
+  
