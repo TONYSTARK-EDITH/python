@@ -1,0 +1,11 @@
+#Your code below
+a=list(input().strip())
+t=len(a)-1
+m= len(a)//2  if len(a)%2==0 else len(a)//2 +1
+for i in range(len(a)//2 + 1):
+    b=a.copy()
+    b[i]='('+b[i]+')'
+    if i!=t-i:
+        b[t-i]='('+b[t-i]+')'
+    print("".join(b))
+    
