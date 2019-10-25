@@ -1,0 +1,13 @@
+#Your code below
+a=int(input())
+b=list(map(int,input().split()))
+c=int(input())
+t=2**c
+m=0
+for i in range(c-1,c+t-1):
+    if i<a:
+        m=m+b[i]
+    else:
+        break
+print(m)
+    
