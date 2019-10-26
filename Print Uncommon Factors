@@ -1,0 +1,24 @@
+#Your code below
+def fac(a):
+    b=[]
+    for i in range(a+1,0,-1):
+        if a%i==0:
+            b.append(i)
+    return b
+a,b=map(int,input().split())
+t=fac(a)
+h=fac(b)
+m=t if len(t)>len(h) else h
+l=t if m!=t else h
+g=[]
+if a==b:
+    print(-1)
+for i in m:
+    if i not in l:
+        g.append(i)
+for i in l:
+    if i not in m:
+        g.append(i)
+g.sort()
+for i in range(len(g)-1,-1,-1):
+    print(g[i],end=" ")
