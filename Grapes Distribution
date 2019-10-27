@@ -1,0 +1,15 @@
+#Your code below
+b1,b2,b3=map(int,input().split())
+a,b,c=map(int,input().split())
+if b1<=a:
+    t=a-b1
+    if b2<=(t+b):
+        g=t+b-b2
+        if (g+c)>=b3:
+            print("YES1")
+        else:
+            print("NO")
+    else:
+        print("NO")
+else:
+    print("NO")
