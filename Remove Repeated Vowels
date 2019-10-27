@@ -1,0 +1,17 @@
+#Your code below
+def rep(a):
+    b=[]
+    c="aeiouAEIOU"
+    for i in range(len(a)):
+        if a[i] in c:
+            for j in range(len(a)):
+                if i!=j and a[i]==a[j]:
+                   b.append(i)
+                   print(i)
+                   break
+    return b
+a=list(input().strip())
+h=rep(a)
+for i in range(len(h)):
+    a.pop(h[i]-i)
+print("".join(a))
