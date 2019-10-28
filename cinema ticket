@@ -1,0 +1,19 @@
+#Your code below
+a=int(input())
+b=list(map(int,input().split()))
+if b[0]!=25:
+    print("NO")
+else:
+    s=0
+    for i in b:
+        if i==25:
+            s+=i
+        else:
+            t=i-25
+            if s<t:
+                print("NO")
+                break
+            else:
+                s-=t
+    if s>=0:
+        print("YES")
