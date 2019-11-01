@@ -1,0 +1,8 @@
+a=list(input())
+b,c=map(str,input().split())
+for i in range(int(c)):
+  if b in a:
+    a.remove(b)
+  else:
+    break
+print("".join(a))
