@@ -1,0 +1,5 @@
+#Your code below
+a,b,c=map(int,input().split())
+t=c//2
+g=c-t
+print(g*a - t*b)
