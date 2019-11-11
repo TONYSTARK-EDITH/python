@@ -1,0 +1,6 @@
+a=list(input().strip())
+for i in a:
+  if i.isdigit():
+    print(i,end=" ")
+  else:
+    print(ord(i),end=" ")
