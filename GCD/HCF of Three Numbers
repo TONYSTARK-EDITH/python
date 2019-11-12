@@ -1,0 +1,7 @@
+def gcd(x,y):
+    while(y):
+        x,y=y,x%y
+    return x
+a,b,c=map(int,input().split())
+gc=gcd(a,b)
+print(gcd(gc,c))
