@@ -1,0 +1,22 @@
+a=input().split()
+for i in a:
+    if i=="zero":
+        print(0,end="")
+    elif i=="one":
+        print(1,end="")
+    elif i=="two":
+        print(2,end="")
+    elif i=="three":
+        print(3,end="")
+    elif i=="four":
+        print(4,end="")
+    elif i=="five":
+        print(5,end="")
+    elif i=="six":
+        print(6,end="")
+    elif i=="seven":
+        print(7,end="")
+    elif i=="eight":
+        print(8,end="")
+    else:
+        print(9,end="")
