@@ -1,0 +1,13 @@
+def printf(t,g,a):
+    for i in range(a):
+        if (i+1)%2!=0:
+            print(t,end="")
+        else:
+            print(g,end="")
+a=int(input())
+for i in range(a):
+    if (i+1)%2!=0:
+        printf('#','*',a)
+    else:
+        printf('#','*',a)
+    print()
