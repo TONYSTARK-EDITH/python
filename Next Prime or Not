@@ -1,0 +1,4 @@
+import math
+a,b=map(int,input().split())
+t=[x for x in range(a,b+1) if all(x%t for t in range(2,int(math.sqrt(x))+1))]
+print("YES" if len(t)==2 else "NO")
