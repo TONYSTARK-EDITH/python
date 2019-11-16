@@ -1,0 +1,8 @@
+a,b,c=map(int,input().split())
+t=a
+while 1:
+    if t*2 <= b and t*4 <=c:
+        print(t)
+        break
+    else:
+        t-=1
