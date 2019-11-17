@@ -1,0 +1,6 @@
+a=list(map(int,input().strip().split()))
+h=str(a[1])
+b=a[0]%(10**2)
+c=h[len(h)-1] + h[len(h)-2]
+t=str(b)+str(c)
+print(int("".join(t)))
