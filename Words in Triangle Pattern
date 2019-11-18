@@ -1,0 +1,18 @@
+a=list(input().strip())
+b=[]
+for i in range(len(a)):
+    if i==len(a)-1:
+        b.append(a[i])
+        for i1 in range(len(b)):
+            for j in  range(i1+1):
+                print(b[j],end="")
+            print()
+        break
+    if a[i]!=" ":
+        b.append(a[i])
+    else:
+        for i1 in range(len(b)):
+            for j in range(i1+1):
+                print(b[j],end="")
+            print()
+        b.clear()
