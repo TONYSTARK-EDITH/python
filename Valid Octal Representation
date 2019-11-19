@@ -1,0 +1,8 @@
+a=int(input())
+t='8'
+g='9'
+b=list(str(a))
+if t in b or g in b:
+    print("NO")
+else:
+    print("YES")
