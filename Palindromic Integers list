@@ -1,0 +1,14 @@
+def pal(a):
+    b=a[::-1]
+    if int("".join(a))==int("".join(b)):
+        return 1
+    else:
+        return 0
+a,b=map(int,input().split())
+h=0
+for i in range(a,b+1):
+    if pal(list(str(i)))==1:
+        print(i,end=" ")
+        h=1
+if h==0:
+    print(-1)
