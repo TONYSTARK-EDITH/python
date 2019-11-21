@@ -1,0 +1,2 @@
+a=list(input().strip())
+print("YES" if len(list(set(a)))==1 else "NO")
