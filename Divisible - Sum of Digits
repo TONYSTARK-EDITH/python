@@ -1,0 +1,13 @@
+a=int(input())
+b=list(map(int,input().split()))
+h=0
+for i in b:
+    s=0
+    t=list(str(i))
+    for i1 in t:
+        s+=int(i1)
+    if i%s==0:
+        print(i,end=" ")
+        h=1
+if h==0:
+    print(-1)
