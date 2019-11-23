@@ -1,0 +1,19 @@
+def hol(a):
+    b=[1,2,3,4,5,6,7]
+    c=[]
+    for i in range(7):
+        t=i
+        s=0
+        for j in range(a):
+            print(b[t])
+            if b[t]==6 or b[t]==7:
+                s+=1
+            t+=1
+            if t>=7:
+                t=0
+        c.append(s)
+    return c
+a=int(input())
+t=hol(a)
+print(t)
+print(min(t),max(t),end=" ")
