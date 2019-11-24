@@ -1,0 +1,14 @@
+a=list(input().strip())
+b=list(input().strip())
+c="aeiou"
+h=0
+for i in range(len(a)):
+    if (a[i] in c and b[i] in c) or (a[i] not in c and b[i] not in c):
+        h=1
+    else:
+        h=0
+        break
+if h!=1:
+    print("NO")
+else:
+    print("YES")
