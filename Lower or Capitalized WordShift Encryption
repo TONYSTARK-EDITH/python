@@ -1,0 +1,14 @@
+a=list(input().strip())
+b=int(input())
+c=int(input())
+t=list("abcdefghijklmnopqrstuvwxyz")
+for i in a:
+    if i.isalpha():
+        h=t.index(i)
+        if h+b>=26:
+          h=h-26
+        print(t[h+b],end="")
+    elif i.isdigit():
+        print(int(i)+c,end="")
+    else:
+        print(" ")
