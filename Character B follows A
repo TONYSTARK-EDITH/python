@@ -1,0 +1,8 @@
+a=list(input().strip())
+b=input().strip()
+c=input().strip()
+t=0
+for i in range(len(a)-1):
+    if a[i]==b and a[i+1]==c:
+        t+=1
+print(t)
