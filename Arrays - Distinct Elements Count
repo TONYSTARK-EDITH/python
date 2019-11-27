@@ -1,0 +1,10 @@
+def l(a,b):
+    s=0
+    for i in a:
+        if i not in b:
+            s+=1
+    return s
+a,b=map(int,input().split())
+c=list(map(int,input().split()))
+d=list(map(int,input().split()))
+print(l(c,d)+l(d,c))
