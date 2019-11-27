@@ -1,0 +1,13 @@
+a=int(input())
+b=int(input())
+c=int(input())
+s=0
+if (c>a and c>b) or (c%2!=0 and a%2==0 and b%2==0)or(abs(a-b)<c):
+    print(-1)
+else:
+    while a-b&gt;=c:
+        s+=1
+        a=a-b
+        if a==c:
+            break
+    print(s*2)
