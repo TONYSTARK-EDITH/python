@@ -1,0 +1,5 @@
+a=input().strip()
+b,c=map(int,input().split())
+t=c//len(list(a))
+d=list(a*t)
+print("YES" if d[b-1]==d[c-1] else "NO")
