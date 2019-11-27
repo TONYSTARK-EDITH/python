@@ -1,0 +1,20 @@
+def ch(a,y):
+    s=0
+    for i in range(len(a)-1):
+        if a[i]==y:
+            if a[i+1]=='-':
+                x='-'
+                t=i+1
+            else:
+                t,x=i,0
+            while t+1 < len(a) and a[t+1].isdigit():
+                if x=='-':
+                    s=int(a[t+1])*(-1)
+                else:
+                    s=s*10 + int(a[t+1])
+                t+=1
+    return s
+a=list(input().strip())
+x,y,n,e,s,w=ch(a,'x'),ch(a,'y'),ch(a,'N'),ch(a,'E'),ch(a,'S'),ch(a,'W')
+print('x'+str(x+e-w),end=" ")
+print('y'+str(y+n-s))
