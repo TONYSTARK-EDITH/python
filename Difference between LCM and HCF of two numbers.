@@ -1,0 +1,5 @@
+import math as m
+a=int(input())
+b=int(input())
+t=m.gcd(a,b)
+print((a*b)//t-t)
