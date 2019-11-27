@@ -1,0 +1,7 @@
+a=int(input())
+b=[]
+for i in range(a):
+    x,y=map(int,input().split())
+    t=y/x
+    b.append(t)
+print(b.index(max(b))+1)
