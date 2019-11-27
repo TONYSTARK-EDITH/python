@@ -1,0 +1,13 @@
+from itertools import permutations as c
+a=list(input().strip())
+b=a.copy()
+for i in range(len(a)):
+    a[i]=int(a[i])
+a.sort()
+for i in range(len(a)):
+    a[i]=str(a[i])
+t=c(a)
+for i in t:
+    if int("".join(list(i)))>int("".join(b)):
+        print(int("".join(list(i))))
+        break
