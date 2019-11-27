@@ -1,0 +1,9 @@
+from itertools import combinations as c
+a,b=map(int,input().split())
+d=list(map(int,input().split()))
+co=c(d,b)
+h=[]
+for i in co:
+    t=list(i)
+    h.append(sum(t))
+print(min(h))
