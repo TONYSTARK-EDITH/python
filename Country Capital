@@ -1,0 +1,10 @@
+a=int(input())
+d={}
+for i in range(a):
+    x,y=map(str,input().split())
+    d[x]=y
+c=input().strip()
+if c not in d:
+    print("NONE")
+else :
+    print(d[c])
