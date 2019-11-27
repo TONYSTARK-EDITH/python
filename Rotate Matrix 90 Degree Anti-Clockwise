@@ -1,0 +1,12 @@
+a=int(input())
+b=int(input())
+c=[]
+for i in range(a):
+    x=list(map(int,input().split()))
+    x=x[::-1]
+    c.append(x)
+t=[[c[j][i] for j in range(a)] for i in range(b)]
+for i in t:
+    for j in i:
+        print(j,end=" ")
+    print()
