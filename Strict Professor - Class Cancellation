@@ -1,0 +1,10 @@
+a,b=map(int,input().split())
+c,d=map(int,input().split(":"))
+s=0
+h=input().strip().split()
+for i in range(a):
+    x,y=h[i].split(":")
+    x,y=int(x),int(y)
+    if (x==c and y<=d) or (x<c):
+        s+=1
+print("Yes" if s&lt;b else "No")
