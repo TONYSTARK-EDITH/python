@@ -1,0 +1,9 @@
+a=list(input().strip())
+b=a[::-1]
+c="aeiouAEIOU"
+t=0
+for i in range(len(a)):
+    if a[i] in c:
+        b.pop(i-t)
+        t+=1
+print("".join(b))
