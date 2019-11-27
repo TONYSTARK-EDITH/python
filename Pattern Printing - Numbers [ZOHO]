@@ -1,0 +1,14 @@
+a=int(input())
+for i in range(1,a+1):
+    g=a-i
+    h=a
+    print(i,end=" ")
+    for j in range(g):
+        if j==0:
+            t=i+h
+            print(i+h,end=" ")
+        else:
+            t+=h
+            print(t,end=" ")
+        h=h-1
+    print()
