@@ -1,0 +1,7 @@
+a=list(input().strip())
+b=['t','d','l','f']
+s=0
+for i in a:
+    if i.lower() in b:
+        s+=1
+print(2**s)
