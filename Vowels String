@@ -1,0 +1,8 @@
+a=list(input().strip())
+b="aeiouAEIOU"
+h=0
+for i in a:
+    if i not in b:
+        h=1
+        break
+print("NO" if h==1 else "YES")
