@@ -1,0 +1,9 @@
+a=int(input())
+b=list(map(int,input().split()))
+c=int(input())
+s=0
+for i in b:
+    x=list(str(i))
+    if int(x[0])==c:
+        s+=i
+print(s)
