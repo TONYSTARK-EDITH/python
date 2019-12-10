@@ -1,0 +1,9 @@
+a=list(input().strip())
+while True:
+    if a[0]=='0':
+        h=a[0]
+        a.pop(0)
+        a.append(h)
+    else:
+        break
+print(int("".join(a)))
