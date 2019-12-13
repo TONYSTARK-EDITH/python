@@ -1,0 +1,25 @@
+a=int(input())
+b=int(input())
+mat,mat2=[],[]
+l,m,c,f=0,0,0,0
+for i in range(a):
+    x=list(map(int,input().strip().split()))
+    mat.append(x)
+for i in range(b):
+    y=list(map(int,input().strip().split()))
+    mat2.append(y)
+for i in range(a):
+    for j in range(a):
+        if mat[i][j]==mat2[l][m]:
+            c+=1
+            if m<b:
+                m+=1
+            if m>=b:
+                l+=1
+                m=0
+            if l>=b:
+                l=0
+            if c==b**2:
+                f=1
+                break
+print("TRUE" if f==1 else "FALSE")
