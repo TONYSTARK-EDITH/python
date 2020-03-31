@@ -1,0 +1,11 @@
+import string as s
+b=list(s.ascii_lowercase)
+while True:
+    try:
+        c=input().strip().split(" ")
+        for i in c:
+            t=len(i)
+            print(b[t-1],end="")
+        print(" ",end="")
+    except:
+        break
