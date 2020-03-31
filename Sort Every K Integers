@@ -1,0 +1,17 @@
+a,b=map(int,input().split())
+c=list(map(int,input().split()))
+dummy=b
+t=a//b
+cd=[]
+g=0
+for i in range(t):
+    cd.append(c[g:b])
+    g=b
+    b+=dummy
+if a%b!=0:
+    cd.append(c[g:])
+for i in cd:
+    i.sort()
+    i.reverse()
+    for j in i:
+        print(j,end=" ")
