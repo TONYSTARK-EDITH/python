@@ -1,0 +1,60 @@
+lef,bac=map(int,input().split())
+right,left,front,back=[],[],[],[]
+n=int(input())
+movements = list(map(str,input().split()))
+nomovemets = 0
+for i in movements:
+    t=list(i)
+    h='' #in order concat the integer part
+    for k in t:
+        # Append the direction into list
+        if k.isalpha():
+            if k=='R':
+                right.append(int(h))
+            elif k=='L':
+                left.append(int(h))
+            elif k=='F':
+                front.append(int(h))
+            elif k=='B':
+                back.append(int(h))
+        else:
+            #concatting integer parts
+            h+=k
+ri,li,fi,bi=0,0,0,0
+x,y=0,0
+for i in movements:
+    if list(i)[-1]=='R':
+        #in order to acces the direction
+        x+=right[ri]
+        if x<0 or x>lef:
+            x-=right[ri]
+            nomovemets+=1
+            ri+=1
+        else:
+            ri+=1
+    
+    elif list(i)[-1]=='L':
+        x-=left[li]
+        if x<0 or x>lef:
+            x+=left[li]
+            nomovemets+=1
+            li+=1
+        else:
+            li+=1
+    elif list(i)[-1]=='F':
+        y+=front[fi]
+        if y<0 or y>bac:
+            y-=front[fi]
+            nomovemets+=1
+            fi+=1
+        else:
+            fi+=1
+    elif list(i)[-1]=='B':
+        y-=back[bi]
+        if y<0 or y>bac:
+            y+=back[bi]
+            nomovemets+=1
+            bi+=1
+        else:
+            bi+=1
+print(nomovemets)
