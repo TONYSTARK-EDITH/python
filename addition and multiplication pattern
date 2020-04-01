@@ -1,0 +1,20 @@
+def printt(a,t):
+  for i in range(len(a)):
+    if i==len(a)-1:
+       print(str(a[i])+'=',end="")
+    else:
+      print(str(a[i])+t,end="")
+a=int(input())
+b=[i for i in range(1,a+1)]
+for i in range(a):
+   if (i+1)%2!=0:
+    printt(b,'+')
+    print(sum(b))
+    b.pop(-1)
+   else:
+    printt(b,'*')
+    h=1
+    for i in b:
+      h*=i
+    print(h)
+    b.pop(-1)
