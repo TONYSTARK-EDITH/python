@@ -1,0 +1,17 @@
+a=list(input().strip())
+b=int(input())
+c=[list(input().strip()) for i in range(b)]
+h=0
+for i in range(b):
+    x=a.copy()
+    for j in c[i]:
+        if j in x:
+            x.pop(x.index(j))
+        else:
+            h=1
+            break
+    if h==1:
+        print("No")
+        break
+if h==0:
+    print("Yes")
