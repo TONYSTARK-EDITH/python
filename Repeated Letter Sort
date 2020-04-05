@@ -1,0 +1,15 @@
+def repeat(a):
+  b,ind=[],[]
+  for i in range(len(a)):
+    t=1
+    for j in range(len(a)):
+      if a[i]==a[j]:
+        t+=1
+    if t>2:
+      b.append(a[i])
+      ind.append(i)
+  for i,j in zip(b,ind):
+    a[i]=j
+  return a
+a=list(input().strip())
+print("".join(repeat(a)))
