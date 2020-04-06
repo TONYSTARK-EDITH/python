@@ -1,0 +1,19 @@
+a,b=map(int,input().split())
+c,d=map(int,input().split())
+for i in range(c):
+  for j in range(a):
+    for k in range(d):
+      if k!=d-1:
+        s=('*'*b)+'|'
+      else:
+        s='*'*b
+      print(s,end="")
+    print()
+  if i!=c-1:
+    for l in range(d):
+      if l!=d-1:
+        s=('-'*b)+'+'
+      else:
+        s='-'*b
+      print(s,end="")
+      
