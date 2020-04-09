@@ -1,0 +1,17 @@
+def find(a):
+  h=0
+  for i in a:
+    rep=[]
+    t=list(set(i))
+    if len(t)>=3:
+      for j in t:
+        if j not in rep:
+          rep.append(j)
+        else:
+          break
+    if len(rep)>=3:
+      print(i,end=" ")
+      h=1
+if h==0:
+  print(-1)
+    
