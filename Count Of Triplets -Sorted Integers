@@ -1,0 +1,16 @@
+def find(a,j,t):
+  h=0
+  for i in range(j+1,len(a)):
+    if t<a[i]:
+      h+=1
+  return h
+a=int(input())
+b=list(map(int,input().split()))
+h=0
+for i in range(a):
+  m=[]
+  for j in range(i+1,a):
+    if b[i]<b[j]:
+      m.append(find(b,j,b[j]))
+  h+=sum(m)
+print(h)
